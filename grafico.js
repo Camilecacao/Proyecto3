@@ -1,8 +1,10 @@
 const canvas=document.getElementById ("myChart");
 
-
+let nuevoGrafico;
 export const grafico= (fechas,casos)=>{
-   
+   if (nuevoGrafico){
+    nuevoGrafico.destroy()
+   }
     nuevoGrafico= new Chart(canvas, {
         type: 'line',
         data: {
