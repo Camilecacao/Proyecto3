@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Ministerio de la Enfermedad</title>
+</head>
+
+<body >
+  <!-- NAVBAR -->
+  <header class="w-full bg-purple-300 p-6 my-4">
+    <nav class="flex items-center justify-center gap-6 mb-8">
+      <img src="/Images/logo ministerio.jpg" alt="Logo" width="65" height="55" class="">
+      <h1 class="text-3xl font-bold">
+        Ministerio de la Enfermedad
+      </h1>
+    </nav>
+    <div>
+      <ul class="flex flex-wrap gap-6 items-center justify-around text-white font-bold pb-6">
+        <li>MINISTERIO</li>
+        <li>SALUD PÚBLICA</li>
+        <li>CENTROS ASISTENCIALES</li>
+        <li>RESIDENCIAS SANITARIAS</li>
+        <li>CASOS POSITIVOS</li>
+        <li>AYUDA</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- JUMBOTRON -->
+
+  <section
+    class="bg-cover bg-no-repeat bg-[url('https://cdn.leonardo.ai/users/3cd56eb4-0670-475b-985c-1bc67c8ca7dd/generations/4a64573f-1c27-49ad-ada7-c51f24c42545/Default_virus_covid_animation_0.jpg')] bg-gray-700 bg-blend-multiply">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Datos
+        mundiales de COVID-19</h1>
+      <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Busca las cifras de casos
+        confirmados COVID-19 de acuerdo a tu país aquí abajo</p>
+      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+
+        <form id="formulario">
+          <div class="mb-6">
+            <input type="text" id="pais"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Ingresa tu país..." required>
+          </div>
+          <button type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buscar</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+
+
+  <!-- GRAFICO -->
+  <div class="w-3/4 mx-auto my-10">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <div id="data"></div>
+
+  <div class="bg-purple-300 flex flex-col p-6">
+    <div class="md:flex w-full md:flex-row" >
+      <img src="/Images/logo ministerio.jpg" class="md:w-1/4">
+      <div class="p-6 gap-6 md:flex items-center justify-around w-full">
+        <div class="text-center gap-6">
+          <h4 class="font-bold text-2xl">Mesa Ayuda</h4>
+          <p>Teléfono: +56222345678</p>
+          <p>Correo: covid19@ministeriodelaenfermedad.cl</p>
+        </div>
+        <div class="text-center gap-6">
+          <h4 class="font-bold text-2xl">Ubicación</h4>
+          <p>Enrique Mac Iver 541, Santiago, Chile</p>
+        </div>
+      </div>
+    </div>
+    <hr class="my-5">
+    <h5 class="text-center font-bold">© 2023. Todos los derechos reservados "Ministerio de la Enfermedad".Desarrollado con 💜 por
+      CEJ</h5>
+  </div>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./main.js" type="module"></script>
+</body>
+
+</html>
