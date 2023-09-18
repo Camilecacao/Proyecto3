@@ -14,7 +14,7 @@ export const grafico= (fechas,casos)=>{
             data: casos,
             borderWidth: 1,
             fill: false,
-            borderColor: 'rgb(216, 180, 154)',
+            borderColor: 'rgb(216, 180, 254)',
             tension: 0.1
           }]
         },
