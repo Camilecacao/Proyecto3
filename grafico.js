@@ -12,7 +12,10 @@ export const grafico= (fechas,casos)=>{
           datasets: [{
             label: '# de casos',
             data: casos,
-            borderWidth: 1
+            borderWidth: 1,
+            fill: false,
+            borderColor: 'rgb(216, 180, 154)',
+            tension: 0.1
           }]
         },
         options: {
