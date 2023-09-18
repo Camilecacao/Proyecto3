@@ -1571,6 +1571,11 @@ input:checked + .toggle-bg {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
+.bg-purple-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(108 43 217 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1869,6 +1874,16 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-purple-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(172 148 250 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-purple-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 33 181 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blue-600:hover {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
@@ -1924,6 +1939,16 @@ input:checked + .toggle-bg {
 .focus\:ring-blue-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(63 131 248 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-purple-100:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(237 235 254 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-purple-300:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(202 191 253 / var(--tw-ring-opacity));
 }
 
 .group:hover .group-hover\:bg-white\/50 {
@@ -1993,6 +2018,16 @@ input:checked + .toggle-bg {
   background-color: rgb(31 41 55 / 0.5);
 }
 
+:is(.dark .dark\:bg-purple-200) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 215 254 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-purple-600) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 58 242 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:bg-opacity-80) {
   --tw-bg-opacity: 0.8;
 }
@@ -2051,6 +2086,16 @@ input:checked + .toggle-bg {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:hover\:bg-purple-300:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 191 253 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:hover\:bg-purple-700:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(108 43 217 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:hover\:text-blue-500:hover) {
   --tw-text-opacity: 1;
   color: rgb(63 131 248 / var(--tw-text-opacity));
@@ -2089,6 +2134,16 @@ input:checked + .toggle-bg {
 :is(.dark .dark\:focus\:ring-blue-800:focus) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(30 66 159 / var(--tw-ring-opacity));
+}
+
+:is(.dark .dark\:focus\:ring-purple-400:focus) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(172 148 250 / var(--tw-ring-opacity));
+}
+
+:is(.dark .dark\:focus\:ring-purple-800:focus) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(85 33 181 / var(--tw-ring-opacity));
 }
 
 :is(.dark .dark\:focus\:ring-offset-gray-800:focus) {
